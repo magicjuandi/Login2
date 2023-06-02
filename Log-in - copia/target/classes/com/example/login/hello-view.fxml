@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="fondo" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Login">
+   <children>
+      <Label layoutX="231.0" layoutY="38.0" prefHeight="38.0" prefWidth="329.0" styleClass="buser" text="Bienvenid@ a tuHorario" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+         <stylesheets>
+            <URL value="@Themes/buttons.css" />
+            <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+         </stylesheets>
+      </Label>
+      <Label layoutX="231.0" layoutY="189.0" prefHeight="23.0" prefWidth="133.0" styleClass="buser" text="Usuario:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@Themes/buttons.css" />
+            <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+         </stylesheets>
+      </Label>
+      <Label layoutX="231.0" layoutY="262.0" prefHeight="23.0" prefWidth="133.0" styleClass="buser" text="Contraseña:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@Themes/buttons.css" />
+            <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+         </stylesheets>
+      </Label>
+      <PasswordField fx:id="password" layoutX="231.0" layoutY="292.0" prefHeight="27.0" prefWidth="262.0" promptText="Contraseña" styleClass="textF" stylesheets="@../../../../java/com/example/login/Themes/buttons.css" />
+      <TextField fx:id="username" layoutX="231.0" layoutY="220.0" prefHeight="27.0" prefWidth="262.0" promptText="Usuario" styleClass="textF">
+         <stylesheets>
+            <URL value="@Themes/buttons.css" />
+            <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+         </stylesheets></TextField>
+      <Button fx:id="login" layoutX="231.0" layoutY="329.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="27.0" prefWidth="121.0" styleClass="bcuenta" stylesheets="@Themes/buttons.css" text="Iniciar Sesion" textFill="WHITE" />
+      <Button fx:id="signup" layoutX="374.0" layoutY="329.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="27.0" prefWidth="121.0" styleClass="bcuenta" stylesheets="@Themes/buttons.css" text="Crear Cuenta" textFill="WHITE" />
+      <Label fx:id="wrong" contentDisplay="CENTER" layoutX="232.0" layoutY="101.0" prefHeight="27.0" prefWidth="338.0" styleClass="buser" text="Usuario y/o contraseña erronea." textFill="WHITE" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <stylesheets>
+            <URL value="@Themes/buttons.css" />
+            <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+         </stylesheets>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@Themes/buttons.css" />
+      <URL value="@../../../../java/com/example/login/Themes/buttons.css" />
+   </stylesheets>
+</AnchorPane>

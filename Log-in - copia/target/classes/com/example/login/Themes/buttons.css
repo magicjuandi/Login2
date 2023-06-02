@@ -1,0 +1,15 @@
+.fondo {
+    -fx-background-image: url("bg.png");
+}
+.buser {
+    -fx-font-family: "Lucida Console";
+    -fx-background-color: rgba(255, 0, 0, 0.2);
+}
+.textF {
+    -fx-font-family: "Lucida Console";
+    -fx-background-color: #D2F3E4;
+}
+.bcuenta {
+    -fx-font-family: "Lucida Console";
+    -fx-background-color: rgba(255, 0, 0, 0.2);
+}
